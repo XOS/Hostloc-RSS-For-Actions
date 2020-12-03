@@ -24,8 +24,6 @@ POST_URL 内容填写TG机器人密匙
 
 TG_ID 内容填写群组ID或者个人ID
 
-
-
 ![](https://cdn.jsdelivr.net/gh/lzw981731/img/2020/07/24/ccea.png)
 
 ![](https://cdn.jsdelivr.net/gh/lzw981731/img/2020/07/24/a9e7.png)
