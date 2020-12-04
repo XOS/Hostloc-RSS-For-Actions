@@ -1,4 +1,4 @@
-name: 'Hostloc Auto RSS'
+name: 'Hostloc Push'
 
 on:
   push:
@@ -27,8 +27,8 @@ jobs:
       run: python -m pip install --upgrade torequests     
     - name: '安装 js2py'
       run: python -m pip install --upgrade js2py
-    - name: '开始推送内容至TG频道'
+    - name: '内容推送中'
       env:
           POST_URL: ${{ secrets.POST_URL }}
           TG_ID: ${{ secrets.TG_ID }}
-      run: python hostloc_tg.py
+      run: python HostlocPush.py
