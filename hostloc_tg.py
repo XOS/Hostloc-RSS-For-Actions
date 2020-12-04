@@ -114,7 +114,7 @@ def master(r):
                 # print(get_content(url_list))
                 content_2 = mark_down(get_content(url_list))
                 # title = mark_down(name[i + 1])
-                text = '【主题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【预览】[{0}]({1})'.format(content_2, url_list)
+                text = '【主题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【预览】[{0}]'.format(content_2)
                 # 修改为自己的想推送的ID
                 post(''+tg_id+'', text)
             else:
@@ -152,7 +152,7 @@ def master_1(r):
                 # print(get_content(url_list))
                 content_2 = mark_down(get_content_1(url_list))
                 # title = mark_down(name)
-                text = '【主题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【预览】[{0}]({1})'.format(content_2, url_list)
+                text = '【主题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【预览】[{0}]'.format(content_2)
                 print(text)
                 post(''+tg_id+'', text)
             else:
