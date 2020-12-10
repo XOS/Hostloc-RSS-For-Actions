@@ -106,7 +106,7 @@ def master(r):
                 # 作者id链接
                 url_author = "https://www.hostloc.com/{}".format(author_url[k])
                 # 时间戳
-                time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
+                time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime()+8)
                 date_1 = get_week_day(datetime.datetime.now())
                 time_2 = time_1 + '    ' + date_1 + '    '
                 time2 = str(time_2).replace('-', '\\-')
