@@ -82,7 +82,7 @@ def mark_down(content):
   #  except Exception:
    #     print("推送失败！")
    #     time.sleep(3)
-   #     post(chat_id, text)
+        post(chat_id, text)
 
 # 主程序
 def master(r):
