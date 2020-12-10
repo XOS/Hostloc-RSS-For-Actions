@@ -71,7 +71,7 @@ def mark_down(content):
         content = content.replace(k, "")
     return content
 
-#def post(chat_id, text):
+def post(chat_id, text):
  #   try:
  #       text = parse.quote(text)
  #       post_url = 'https://api.telegram.org/bot'+post_u+'/sendMessage' \
