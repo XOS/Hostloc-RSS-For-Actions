@@ -108,7 +108,7 @@ def master(r):
                 url_author = "https://www.hostloc.com/{}".format(author_url[k])
                 # 时间戳
                 #time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
-                time_1 = datetime.datetime.now(tz).strftime('%Y-%m-%d    %H:%M:%S')
+                time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
                 date_1 = get_week_day(datetime.datetime.now(tz))
                 time_2 = time_1 + '    ' + date_1 + '    '
                 time2 = str(time_2).replace('-', '\\-')
@@ -147,7 +147,7 @@ def master_1(r):
                 url_list = "https://www.hostloc.com/thread-{0}-1-1.html".format(str_url)
                 # 时间戳
                 #time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
-                time_1 = datetime.datetime.now(tz).strftime('%Y-%m-%d    %H:%M:%S')
+                time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
                 date_1 = get_week_day(datetime.datetime.now(tz))
                 time_2 = time_1 + '    ' + date_1 + '    '
                 time2 = str(time_2).replace('-', '\\-')
