@@ -107,16 +107,15 @@ def master(r):
                 # 作者id链接
                 url_author = "https://www.hostloc.com/{}".format(author_url[k])
                 # 时间戳
-                #time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
-                time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
-                date_1 = get_week_day(datetime.datetime.now(tz))
-                time_2 = time_1 + '    ' + date_1 + '    '
-                time2 = str(time_2).replace('-', '\\-')
+                #time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
+                #date_1 = get_week_day(datetime.datetime.now(tz))
+                #time_2 = time_1 + '    ' + date_1 + '    '
+                #time2 = str(time_2).replace('-', '\\-')
                 # 获得预览内容
                 # print(get_content(url_list))
                 content_2 = mark_down(get_content(url_list))
                 # title = mark_down(name[i + 1])
-                text = '***【HOSTLOC】新帖推送***' + '\n' + '【标题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【摘要】[{0}]({1})'.format(content_2, url_list)
+                text = '***Hostloc 新帖推送***' + '\n' + '【标题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【摘要】[{0}]({1})'.format(content_2, url_list)
                 # 修改为自己的想推送的ID
                 post(''+tg_id+'', text)
             else:
@@ -146,16 +145,16 @@ def master_1(r):
 
                 url_list = "https://www.hostloc.com/thread-{0}-1-1.html".format(str_url)
                 # 时间戳
-                #time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
-                time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
-                date_1 = get_week_day(datetime.datetime.now(tz))
-                time_2 = time_1 + '    ' + date_1 + '    '
-                time2 = str(time_2).replace('-', '\\-')
+                ##time_1 = time.strftime("%Y-%m-%d    %H:%M:%S", time.localtime())
+                #time_1 = datetime.datetime.now(tz).strftime('%Y年%m月%d日    %H:%M:%S')
+                #date_1 = get_week_day(datetime.datetime.now(tz))
+                #time_2 = time_1 + '    ' + date_1 + '    '
+                #time2 = str(time_2).replace('-', '\\-')
                 # 获得预览内容
                 # print(get_content(url_list))
                 content_2 = mark_down(get_content_1(url_list))
                 # title = mark_down(name)
-                text = '***【HOSTLOC】新帖推送***' + '\n' + '【标题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【时间】' + time2 + '\n' + '【摘要】[{0}]({1})'.format(content_2, url_list)
+                text = '***Hostloc 新帖推送***' + '\n' + '【标题】' + "***[{0}]({1})***".format(mark_down(name), url_list) + '\n' + '【作者】[{0}]({1})'.format(mark_down(author[i + 1]), url_author) + '\n' + '【摘要】[{0}]({1})'.format(content_2, url_list)
                 print(text)
                 post(''+tg_id+'', text)
             else:
