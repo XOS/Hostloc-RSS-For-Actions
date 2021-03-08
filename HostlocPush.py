@@ -169,15 +169,15 @@ def get_content_1(url):
     while True:
         try:
             headers = {
-                'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1'}
+                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
             result = 'L7DFW' in cookiestr
             if result:
-                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (iPhone; '
-                                                              'CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version'
-                                                              '/14.0.3 Mobile/15E148 Safari/604.1'}
+                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; '
+                                                              'Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome'
+                                                              '/46.0.2490.76 Mobile Safari/537.36'}
                 r = s.get(url, headers=headers)
             else:
                 r = s.get(url, headers=headers)
@@ -212,15 +212,15 @@ while True:
             print("1")
             url = 'https://www.hostloc.com/forum.php?mod=forumdisplay&fid=45&filter=author&orderby=dateline'
             headers = {
-                'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1'}
+                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
             result = 'L7DFW' in cookiestr
             if result:
-                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (iPhone; '
-                                                              'CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version'
-                                                              '/14.0.3 Mobile/15E148 Safari/604.1'}
+                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; '
+                                                              'Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome'
+                                                              '/46.0.2490.76 Mobile Safari/537.36'}
                 r = s.get(url, headers=headers)
             else:
                 r = s.get(url, headers=headers)
