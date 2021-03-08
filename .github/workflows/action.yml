@@ -8,7 +8,7 @@ on:
     - cron: '0 0/6 * * *'
 
 jobs:
-  push:
+  Push:
     runs-on: ubuntu-latest
     steps:
     - name: 'Checkout codes'
