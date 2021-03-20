@@ -15,7 +15,7 @@ tz = pytz.timezone('Asia/Shanghai')
 def getcookies():
     url = 'https://www.hostloc.com/forum.php?mod=forumdisplay&fid=45&filter=author&orderby=dateline'
     js = js2py.EvalJs()
-    headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
+    headers = {'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Mobile/15E148 Safari/604.1'}
     aesjs = requests.get("https://www.hostloc.com/aes.min.js", headers=headers, timeout=5).text
     js.execute(aesjs)
     getcookie = requests.get(url).text
@@ -77,7 +77,7 @@ def post(chat_id, text):
         post_url = 'https://api.telegram.org/bot'+post_u+'/sendMessage' \
                    '?disable_web_page_preview=true&parse_mode=MarkdownV2&chat_id={0}&text={1}'.format(chat_id, text)
         headers = {
-            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
+            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Mobile/15E148 Safari/604.1'}
         requests.get(post_url, headers=headers)
     except Exception:
         print("推送失败！")
@@ -169,15 +169,15 @@ def get_content_1(url):
     while True:
         try:
             headers = {
-                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
+                'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Mobile/15E148 Safari/604.1'}
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
             result = 'L7DFW' in cookiestr
             if result:
-                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; '
-                                                              'Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome'
-                                                              '/46.0.2490.76 Mobile Safari/537.36'}
+                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (iPhone; '
+                                                              'CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version'
+                                                              '/14.1 Mobile/15E148 Safari/604.1'}
                 r = s.get(url, headers=headers)
             else:
                 r = s.get(url, headers=headers)
@@ -212,15 +212,15 @@ while True:
             print("1")
             url = 'https://www.hostloc.com/forum.php?mod=forumdisplay&fid=45&filter=author&orderby=dateline'
             headers = {
-                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
+                'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Mobile/15E148 Safari/604.1'}
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
             result = 'L7DFW' in cookiestr
             if result:
-                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; '
-                                                              'Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome'
-                                                              '/46.0.2490.76 Mobile Safari/537.36'}
+                headers = {'Cookie': cookiestr, 'user-agent': 'Mozilla/5.0 (iPhone; '
+                                                              'CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version'
+                                                              '/14.1 Mobile/15E148 Safari/604.1'}
                 r = s.get(url, headers=headers)
             else:
                 r = s.get(url, headers=headers)
