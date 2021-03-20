@@ -226,7 +226,7 @@ while True:
                 r = s.get(url, headers=headers)
             master_1(r)
             # 多少秒抓取一次网站，自己设定，不要太小，会被ban ip的
-            time.sleep(40)
+            time.sleep(50)
         except Exception as e:
             try:
                 # 网站不要求js验证
