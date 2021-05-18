@@ -2,7 +2,7 @@
 
 ###### 简介：
 
-推送效果：https://t.me/CloudRSS
+推送效果：https://t.me/MyPei
 
 推送源码来自：https://github.com/w2r/hostloc2tg
 
